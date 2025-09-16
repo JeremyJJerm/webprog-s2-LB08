@@ -32,7 +32,7 @@ Route::prefix('admin')->group(function () {
 
     Route::get('/karyawan', function () {
         return view('admin.karyawan');
-    });
+    }) -> name('karyawan');
 
     Route::get('/dosen', function () {
         return view('admin.dosen');
